@@ -12,7 +12,7 @@ export class MyPipelineStack extends cdk.Stack {
         input: CodePipelineSource.gitHub('CatenaryCloudHQ/cdk-pipelines-example', 'main', {
           authentication: cdk.SecretValue.secretsManager('github-token'),
         }),
-        commands: ['npm ci', 'npm run build', 'npx cdk synth'],
+        commands: ['yarn install --frozen-lockfile', 'yarn build', 'npx cdk synth'],
       }),
     });
   }
