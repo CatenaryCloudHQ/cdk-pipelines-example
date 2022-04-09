@@ -9,7 +9,7 @@ export class MyPipelineStack extends cdk.Stack {
 
     const pipeline = new CodePipeline(this, 'Pipeline', {
       pipelineName: 'MyPipeline',
-      // crossAccountKeys: true,
+      crossAccountKeys: true,
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('CatenaryCloudHQ/cdk-pipelines-example', 'main', {
           authentication: cdk.SecretValue.secretsManager('github-token'),
