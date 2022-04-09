@@ -7,7 +7,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'CDK pipeline with cicd, dev and prod accounts bootstrap',
   cdkVersion: '2.20.0',
   defaultReleaseBranch: 'main',
-  name: 'cdk-piepinees-example',
+  name: 'cdk-pipelines-example',
   buildWorkflow: false,
   rebuildBot: false,
   releaseWorkflow: false,

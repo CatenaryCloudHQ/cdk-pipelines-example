@@ -1,5 +1,5 @@
 {
-  "name": "cdk-piepinees-example",
+  "name": "cdk-pipelines-example",
   "description": "CDK pipeline with cicd, dev and prod accounts bootstrap",
   "scripts": {
     "build": "npx projen build",
